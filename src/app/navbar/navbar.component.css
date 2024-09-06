@@ -1,0 +1,24 @@
+
+.navbar{
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media (max-width: 576px) {
+    .navbar{
+        min-width: 100vw;
+        min-height: 10vh;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar{
+        min-width: 100vw;
+        min-height: 10vh;
+    }
+
+}
+
+
+
+/*  */

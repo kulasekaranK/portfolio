@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.custom-primary{
+    background: #456e7a;
+}
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.heading-font{
+    font-family: "Signika Negative", sans-serif;
+}
+.primary-color{
+    color: #456e7a;
+}
+/* background: #37a16c; */

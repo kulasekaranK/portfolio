@@ -1,0 +1,124 @@
+<div class="container-fluid pb-5 mt-3 vh-100 overflow-auto">
+
+
+    <!-- header -->
+  <div class="row p-5 bg-light d-flex align-items-center justify-content-center rounded-4">
+    <div class=" col-12 col-lg-7 order-2 order-lg-1">
+      <h1 class="text-left heading-font">KULASEKARAN</h1>
+      <p class="text-left text-secondary fs-5">Developer</p>
+      <p class="text-left font">
+        I'm an Angular developer specializing in building scalable web
+        applications. With a focus on delivering efficient and seamless user
+        experiences, I take pride in creating robust solutions. Want to see how
+        I can contribute to your next project? Explore my project portfolio and
+        resume.
+      </p>
+      <button class="btn custom-primary text-light me-3">
+        <i class="bi bi-file-earmark-text-fill"></i> Resume
+      </button>
+      <button class="btn btn-secondary" routerLink="/portfolio">
+        View Portfolio <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </div>
+    <div class="col-12 col-lg-4 order-1 order-lg-2 mb-4">
+      <img src="profile.jpg" alt="profile" class="rounded-3" width="250px" />
+    </div>
+  </div>
+
+
+<!-- box -->
+  <div class="row p-2 bg-light rounded-1 mt-5">
+    <div class="col-12 col-md-6 col-lg-4 ">
+      <!-- about -->
+      <div class="border p-5 rounded-4 bg-white my-4" style="height: 350px">
+        <h1 class="primary-color heading-font">Who am I ?</h1>
+        <h6 class="text-secondary">
+          A Angular Developer Located In Our Lovely Earth
+        </h6>
+        <p class="text-left font">
+          My name is Kulasekaran. I'm a graduate of 2024 from Manonmaniam
+          Sundaranar University at Tirunelveli with a degree in Bachelor of
+          Computer Application. I'm most passionate about giving back to the
+          community.
+        </p>
+      </div>
+    </div>
+    <!-- personal info -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="border p-5 rounded-4 bg-white my-4" style="height: 350px">
+        <h1 class="primary-color heading-font">Personal Info</h1>
+        <div class="row">
+          <div class="col-4">
+            <p><b>Email :</b></p>
+            <p><b>Mobile :</b></p>
+            <p><b>Address :</b></p>
+          </div>
+          <div class="col-8">
+            <p>{{ email }}</p>
+            <p>+91 8883635144</p>
+            <p>
+              Kalakad, Tirunelveli, Tamilnadu <br />
+              627501.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="col-12 col-lg-4">
+      <div class="border p-5 rounded-4 bg-white my-4" style="height: 350px">
+        <h1 class="primary-color heading-font">Skills</h1>
+        <div class="d-flex flex-wrap gap-4 mt-4">
+          <div class="d-flex flex-column align-items-center">
+            <img src="html-1.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >HTML</span
+            >
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img src="CSS3_logo.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >CSS</span
+            >
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img src="logo-javascript.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >Javascript</span
+            >
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img src="bootstrap-5-1.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >Bootstrap</span
+            >
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img src="typescript.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >Typescript</span
+            >
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img src="angular-icon-1.svg" alt="" height="40px" />
+            <span class="fw-light text-secondary" style="font-size: 12px"
+              >Angular</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- get into touch -->
+    <div class=" col-12 col-lg-8 mx-auto mt-4 mb-5">
+      <div class="card card-body rounded-4">
+        <h1 class="primary-color heading-font text-center">Get In Touch</h1>
+        <p class="text-center">
+          If you have any questions, or if you want to say Hay, please feel free
+          to email me at,
+        </p>
+        <button class="btn btn-dark w-50 mx-auto" >{{ email }}</button>
+      </div>
+    </div>
+  </div>
+</div>

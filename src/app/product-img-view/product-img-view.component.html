@@ -1,0 +1,14 @@
+
+<h1 class="m-3">Image View</h1>
+
+
+<div class="container d-flex justify-content-center align-items-center ">
+  <div class="row">
+    <div class="col-12 mt-5 d-flex flex-column">
+        <a class="text-decoration-none mb-2" [routerLink]="['/product-view',img.id]">
+            <span class="bg-dark p-2 rounded-pill  fs-6 text-light "> <i class="bi bi-arrow-left-short"></i> Back</span>
+            </a>
+      <img [src]="img.url" class="border rounded-4 img-view" alt=""  />
+    </div>
+  </div>
+</div>

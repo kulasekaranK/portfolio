@@ -1,0 +1,39 @@
+<div class="container-fluid vh-100 overflow-auto pb-5 mb-5">
+<h1 class="m-3">Product Details</h1>
+
+<div class="container mt-5">
+  <div class="">
+    <a class="text-decoration-none" [routerLink]="['/product']">
+      <span class="bg-dark p-2 rounded-pill fs-6 text-light me-2"
+        ><i class="bi bi-arrow-left-short"></i> Back</span
+      >
+    </a>
+    <p class="badge text-bg-warning rounded-pill">product id: {{ id }}</p>
+  </div>
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4 card">
+      <a [routerLink]="['/product-img-view', product.id]">
+        <img [src]="product.url" alt="" />
+      </a>
+    </div>
+    <div class="col-12 col-md-6 col-lg-8">
+      <div class="card p-4 h-100">
+        <div class="card-body">
+          <h1>{{ product.title }}</h1>
+          <p class="badge text-bg-secondary">{{ product.badge }}</p>
+          <p class="text-danger fs-5 fw-bold">
+            {{ product.price | currency : "INR" }}
+          </p>
+          <button class="btn btn-dark">Buy Now</button>
+          <h2 class="mt-5">
+            {{ product.InStock ? "InStack" : "out of Stack" }}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-product-description
+    [description]="product.description"
+  ></app-product-description>
+</div>
+</div>

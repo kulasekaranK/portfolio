@@ -1,0 +1,109 @@
+<nav
+  class="navbar navbar-expand-lg custom-primary d-flex flex-column align-items-start p-3 text-light"
+>
+  <div class="d-flex w-100 align-items-center justify-content-between">
+    <a href="#" class="navbar-brand text-light fw-bold fs-3">KULASEKARAN</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarcanvas"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div
+      class="offcanvas offcanvas-start flex-column custom-primary"
+      id="navbarcanvas"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-light fw-bold fs-3" id="offcanvasScrollingLabel">
+          KULASEKARAN
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      
+      <div class="text-center mb-5">
+        <img
+          src="profile.jpg"
+          alt="Profile Picture"
+          width="150px"
+          class="rounded-circle mx-auto d-block mb-3"
+        />
+        <p class="mb-0 text-light">
+          Hi, my name is Kulasekaran, and I'm a developer. Welcome to my
+          portfolio.
+        </p>
+      </div>
+
+      <div class="d-flex flex-column align-items-start w-100 mt-5">
+       
+          
+        <a
+          
+        class="btn mt-2 text-light d-flex align-items-center fw-bold fs-5"
+        [routerLink]="['/']" routerLinkActive="border" [routerLinkActiveOptions]="{exact:true}"
+      >
+          <i class="bi bi-person-fill"></i> <span class="ms-2">About</span>
+        </a>
+        <a
+          
+          class="btn mt-2 text-light d-flex align-items-center fw-bold fs-5"
+          routerLink="/portfolio" routerLinkActive="border"
+        >
+          <i class="bi bi-laptop"></i> <span class="ms-2">Portfolio</span>
+        </a>
+        <a
+          
+          class="btn mt-2 text-light d-flex align-items-center fw-bold fs-5"
+          routerLink="/contact" routerLinkActive="border"
+        >
+          <i class="bi bi-envelope-paper-fill"></i>
+          <span class="ms-2">Contact</span>
+        </a>
+        <a
+          
+          class="btn mt-2 text-light d-flex align-items-center fw-bold fs-5"
+          routerLink="product" routerLinkActive="border"
+        >
+        <i class="bi bi-shop-window"></i>
+          <span class="ms-2">Product</span>
+        </a>
+      </div>
+
+      <ul class="nav  position-fixed bottom-0 mt-auto mb-3 w-100">
+        <li class="nav-item">
+          <a class="nav-link text-light fs-4" href="#"
+            ><i class="bi bi-github"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fs-4" href="#"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fs-4" href="#"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light fs-4" href="#"
+            ><i class="bi bi-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>

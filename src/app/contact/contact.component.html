@@ -1,0 +1,72 @@
+<div class="container">
+  <h1 class="primary-color heading-font my-4">CONTACT</h1>
+  <div class="col-12 col-md-9 col-lg-7 mx-auto border p-4 rounded-4">
+    <form #f="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          id="name"
+          ngModel
+          #uname="ngModel"
+          required
+        />
+        <div class="text-danger" *ngIf="uname.touched && uname.invalid">
+          Required Name!
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          id="email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          ngModel
+          #email="ngModel"
+          required
+        />
+        <div *ngIf="email.touched && email.invalid">
+            <div *ngIf="email.errors?.['required']" class="text-danger">
+              Required Email!
+            </div>
+            <div *ngIf="email.errors?.['pattern']" class="text-danger">
+              Invalid Email Address!
+            </div>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          type="text"
+          class="form-control"
+          rows="8"
+          name="message"
+          id="message"
+          ngModel
+          #message="ngModel"
+          required
+        ></textarea>
+        <div class="text-danger" *ngIf="message.invalid && message.touched">
+          Message Required
+        </div>
+      </div>
+      <button class="btn btn-dark mt-3 d-block ms-auto" [disabled]="f.invalid">Send</button>
+    </form>
+  </div>
+  <!-- get into touch -->
+  <div class="col-12 col-lg-8 mx-auto mt-5 mb-5">
+    <div class="card card-body rounded-4">
+      <h1 class="primary-color heading-font text-center">Get In Touch</h1>
+      <p class="text-center">
+        If you have any questions, or if you want to say Hay, please feel free
+        to email me at,
+      </p>
+      <button class="btn btn-dark w-50 mx-auto">{{ email }}</button>
+    </div>
+  </div>
+</div>
